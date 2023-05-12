@@ -1,7 +1,9 @@
 class BitcoinsController < ApplicationController
-
   def index
-    bitcoin = 1.0
+  end
+
+  def create
+    bitcoin = params["amount"]
 
     # connect to the Coindesk API
     # DON'T CHANGE THIS CODE
